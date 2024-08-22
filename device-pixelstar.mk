@@ -23,6 +23,9 @@ PRODUCT_PACKAGES += \
 # PixelParts
 include packages/apps/PixelParts/device.mk
 
+# ViPER4AndroidFX
+$(call inherit-product, packages/apps/ViPER4AndroidFX/config.mk)
+
 # Kernel
 TARGET_PREBUILT_KERNEL := device/google/shusky-kernel/Image.lz4
 
