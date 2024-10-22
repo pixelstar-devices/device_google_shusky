@@ -1,23 +1,24 @@
 #
 # Copyright (C) 2023 The LineageOS Project
+# Copyright (C) 2024 Project-PixelStar
 #
 # SPDX-License-Identifier: Apache-2.0
 #
 
-# Inherit some common Lineage stuff.
+# Inherit some common PixelStar stuff.
 TARGET_DISABLE_EPPE := true
-$(call inherit-product, vendor/lineage/config/common_full_phone.mk)
+$(call inherit-product, vendor/pixelstar/config/common_full_phone.mk)
 
 # Inherit device configuration
 $(call inherit-product, device/google/shusky/aosp_shiba.mk)
-$(call inherit-product, device/google/zuma/lineage_common.mk)
+$(call inherit-product, device/google/zuma/pixelstar_common.mk)
 
-include device/google/shusky/shiba/device-lineage.mk
+include device/google/shusky/shiba/device-pixelstar.mk
 
 # Device identifier. This must come after all inclusions
 PRODUCT_BRAND := google
 PRODUCT_MODEL := Pixel 8
-PRODUCT_NAME := lineage_shiba
+PRODUCT_NAME := pixelstar_shiba
 
 # Boot animation
 TARGET_SCREEN_HEIGHT := 2400

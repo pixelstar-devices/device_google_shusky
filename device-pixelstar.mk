@@ -1,11 +1,12 @@
 #
 # Copyright (C) 2023 The LineageOS Project
+# Copyright (C) 2024 Project-PixelStar
 #
 # SPDX-License-Identifier: Apache-2.0
 #
 
 # Overlays
-DEVICE_PACKAGE_OVERLAYS += $(LOCAL_PATH)/overlay-lineage
+DEVICE_PACKAGE_OVERLAYS += $(LOCAL_PATH)/overlay-pixelstar
 
 # ANGLE - Almost Native Graphics Layer Engine
 PRODUCT_PACKAGES += \
